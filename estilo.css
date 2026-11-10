@@ -1,0 +1,120 @@
+/* estilo.css — Crônicas de Amor e Perplexidade */
+
+body {
+  max-width: 700px;
+  margin: 10% auto 3% auto;
+  padding: 0 5%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 100%;
+  line-height: 1.4;
+  color: #222;
+  background: #fdfdfb;
+}
+
+/* --- TÍTULO DA CRÔNICA --- */
+#tit {
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  line-height: 1.2;
+}
+
+/* --- DATA --- */
+#date {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 3em;
+}
+
+/* --- PROSA GERAL --- */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.9em;
+  text-align: justify;
+}
+
+/* --- PAUSA COM ASTERISCOS --- */
+p.pausa {
+  font-weight: lighter;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0 1em 0;
+}
+
+/* --- LINKS (usados nos índices) --- */
+a {
+  color: #444;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- CABEÇALHOS DOS ÍNDICES --- */
+h1 {
+  font-size: 1.3em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+/* --- PÁGINAS DE ÍNDICE (raiz e por ano): mais largas --- */
+body.indice {
+  max-width: 900px;
+}
+
+/* --- LISTA DE LINKS EM COLUNAS --- */
+ul.colunas {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+  columns: 3;
+  column-gap: 2em;
+}
+ul.colunas li {
+  break-inside: avoid;
+  margin-bottom: 0.6em;
+  font-size: 0.95em;
+}
+@media (max-width: 700px) {
+  ul.colunas {
+    columns: 1;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  ul.colunas {
+    columns: 2;
+  }
+}
+
+/* --- BARRA DE NAVEGAÇÃO --- */
+nav {
+  font-size: 0.85em;
+  color: #999;
+  margin-bottom: 2em;
+}
+nav a {
+  color: #999;
+}
+nav a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* --- TELAS PEQUENAS --- */
+@media (max-width: 600px) {
+  body {
+    padding: 0 8%;
+    margin-top: 6%;
+  }
+}
